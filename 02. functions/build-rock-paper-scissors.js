@@ -1,7 +1,7 @@
 // The code above ask for the user to choose some of them:
 var userChoice = prompt("Do you chose rock, paper or scissors?");
 
-//Generating a random number
+//Generating a random number between 0 and 1 
 var computerChoice = Math.random();
 
 // Defining a value for a range of number
@@ -20,7 +20,7 @@ else {
 console.log("Computer: " + computerChoice);
 
 
-//Writting a function to compare the numbers
+//Writting a function to compare the choices
 
 function compare(choice1, choice2) {
 	if (choice1 == choice2) {
