@@ -1,1 +1,1 @@
-All lines of code here are following the JavaScript track on codecademy. I'm starting to learn the core principles of JavaScript.
+<p>The main purpose of this repository is to gain experience working with the core concepts of JavaScript. In some of the directories in this repository I followed the JavaScript path on<a href="https://www.codecademy.com/learn/javascript">CodeCademy</a>.</p>
