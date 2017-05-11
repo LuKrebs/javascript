@@ -28,7 +28,7 @@ It's a multiple line comment :)
 
 "I'm coding like a champ".length
 
-"I'm coding like a champ".length > 10
+"I'm coding like a champ".length > 10 // It will return true or false
 
 
 // Learning booleans
@@ -81,6 +81,8 @@ if(10 % 5 === 0) {
 
 // Learning substrings
 "wonderful day".substring(3,7);
+
+// x.substring(starting here, stop here and don't include);
 
 console.log("January".substring(0,3)); // ~> 'Jan'
 console.log("Melbourne is great".substring(0,12)); // ~> 'Melbourne is'

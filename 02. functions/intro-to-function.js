@@ -15,14 +15,14 @@ divideByThree(100000);
 
 var foodDemand = function (food) {
     console.log("I want to eat " + food);
-}
+};
 
 foodDemand("Chinease food");
 
 var orangeCost = function (price) {
     var totalcost = price * 5;
     console.log(totalcost);
-}
+};
 
 orangeCost(5);
 
@@ -37,7 +37,7 @@ console.log(newNumber);
 // Define quarter here.
 var quarter = function (number) {
     return number / 4;
-}
+};
 
 
 if (quarter(48) % 3 === 0 ) {

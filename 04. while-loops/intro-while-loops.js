@@ -67,7 +67,7 @@ console.log("Printing 10 to 100, inclunding 100, by 10, using while loop and a c
 
 //Logs 10 to 100, by 10, including 100 - using while
 var b = 10;
-while (b < 100) {
+while (b <= 100) {
  console.log(b);
  b += 10;
 }

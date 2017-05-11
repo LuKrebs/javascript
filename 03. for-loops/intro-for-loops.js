@@ -35,14 +35,14 @@ for (var c = 0; c < 50; c += 5) {
 }
 
 console.log("");
-console.log("Printint 8 until 120 by count increments of 12");
+console.log("Printing 8 until 120 by count increments of 12");
 
 for (var b = 8; b < 120; b += 12) {
 	console.log(b);
 }
 
 console.log("");
-console.log("Printint starts in 10 and go until 0");
+console.log("Printing starts in 10 and go until 0");
 
 for (var i = 10; i >= 0; i--) {
 	console.log(i);

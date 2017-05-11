@@ -27,7 +27,6 @@ var newArray = [[1,2,3], [1,2,3], [1,2,3]];
 console.log(newArray);
 
 // Starting learn about objects
-
 var phonebookEntry = {};
 
 phonebookEntry.name = "Luciano Krebs";
@@ -45,16 +44,16 @@ console.log("");
 var me = {
 	name: "Luciano Krebs",
 	age: 23
-}
-console.log("Logs the object created with the literal notation")
+};
+console.log("Logs the object created with the literal notation");
 console.log(me);
 
 
 console.log("");
 // Using the object constructor to create an object
 var myFriend = new Object();
-myFriend["name"] = "San Francisco";
-myFriend.position = "Web Developer";
+myFriend["city"] = "San Francisco";
+myFriend["position"] = "Developer/Data Scientist";
 
 console.log("Logs the object created with the object constructor")
 console.log(myFriend);
@@ -67,17 +66,17 @@ console.log("");
 var object1 = {
     name: "Luciano Krebs",
     age: 23
-}
+};
 
 var object2 = {
     city1: "San Francisco",
-    position: "Web Developer"
-}
+    position: "Developer"
+};
 
 var object3 = {
     city2: "New York",
-    position: "Web Developer"
-}
+    position: "Developer"
+};
 
 
 // using object constructor
@@ -99,14 +98,14 @@ console.log(object4);
 console.log(object5);
 
 // Learning heterogeneous arrays
-var heterogeneousArray = [5, true, "Luciano", {city: "San Francisco", position: "Web Developer"}];
+var heterogeneousArray = [5, true, "Luciano", {city: "San Francisco", position: "Developer"}];
 
 console.log("");
 console.log("Log the heterogeneous array:");
 console.log(heterogeneousArray);
 
-// Getting a deep understando of jagged arrays: It's an array of arrays, but each array nested
-// ins't have the same length. Example:
+// Getting a deep understand of jagged arrays: It's an array of arrays, but each array nested
+// don't have the same length. Example:
 var myJaggedArray = [
 	["Luciano Krebs",2,3],
 	[1,2,3,4,{city: "San Francisco", position: "Web Developer"}]
@@ -122,7 +121,7 @@ var myObject = {
 	name: "Luciano",
 	type: "Calm",
 	interests: ["3D printing", "Data Science", "Robotics"]
-}
+};
 
 // Creating my own object
 var myOwnObject = {
@@ -130,4 +129,9 @@ var myOwnObject = {
     position: "Web Developer",
     city: "San Francisco",
     interests: {"3D printing": 10, "Data Science and Data Meaning": 10}
-}
+};
+
+console.log("");
+console.log(myObject);
+console.log("");
+console.log(myOwnObject);
