@@ -46,3 +46,38 @@ function fightOrRunOrPay() {
         
     }
 }
+
+/*  Starting another function ~> this funciton will change the image when I click on this*/
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'img/sf.png') {
+      myImage.setAttribute ('src','img/ny.jpg');
+      myImage.style.width = '400px';
+      myImage.style.height = '300px';
+    } else {
+      myImage.setAttribute ('src','img/sf.png');
+    }
+}
+
+var myButton = document.getElementById('testButton');
+var myHeading = document.querySelector('h1');
+
+function setUserName() {
+    var myName = prompt("Please enter your name.");
+    localStorage.setItem('name', myName);
+    myHeading.textContent = "Hello, " + myName;
+}
+
+if (!localStorage.getItem('name')) {
+    setUserName();
+}
+else {
+    var storedName = localStorage.getItem('name');
+    myHeading.textContent = "Hello, " + storedName;
+}
+
+myButton.onclick = function() {
+    setUserName();
+}
