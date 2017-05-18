@@ -380,6 +380,7 @@ console.log("Your overall GPA is " + myStudentReport.getGPA());
 
 console.log("");
 
+// function with all grades private
 function NewStudentReport() {
 	var grade1 = 3;
 	var grade2 = 2;
@@ -392,7 +393,7 @@ function NewStudentReport() {
 var myNewStudentReport = new NewStudentReport();
 
 console.log("Printing all of the student's grades");
-// a for loop that are able to access all of the student's grades
+// a for loop that are unable to access all of the student's grades
 for(var x in myNewStudentReport) {
     if(typeof myNewStudentReport[x] !== "function") {
         console.log("Muahaha! " + myNewStudentReport[x]);
