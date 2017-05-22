@@ -74,11 +74,11 @@ body {
   border-bottom: 1vw solid #2D2D2D !important;
 }
 
-.toggle-blink {
+.toggle-blink, .stop-blink {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
+  margin-left: 1em;
   color: white;
   font-weight: bold;
   height: 6vw;

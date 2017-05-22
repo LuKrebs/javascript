@@ -73,12 +73,17 @@ function main() {
     }
   });
   $(".toggle-blink").on('click', function() {
-    if (colorClass) {
+    $(this).toggleClass('opacity');
+    $('.stop-blink').removeClass('opacity');
+    var x = setInterval(function() {
+      $('.box.cyan, .box.yellow, .box.magenta').toggleClass('blink');
+    }, 350);
+    $('.stop-blink').on('click', function() {
+      $('.box.cyan, .box.yellow, .box.magenta').removeClass('blink');
       $(this).toggleClass('opacity');
-      var x = setInterval(function() {
-        $('.box.cyan, .box.yellow, .box.magenta').toggleClass('blink');
-      }, 350);
-    }
+      $('.toggle-blink').removeClass('opacity');
+      clearInterval(x);
+    });
   });
 }
 
